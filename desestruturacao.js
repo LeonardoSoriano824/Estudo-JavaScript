@@ -1,4 +1,8 @@
-let pessoa = {nome: "Leonardo", idade: 24, cidade: "São Paulo"}
+let pessoa = [
+    {nome: "Leonardo", idade: 24, cidade: "São Paulo"},
+    {nome: "João", idade: 25, cidade: "São Paulo"},
+    {nome: "Maria", idade: 30, cidade: "Rio de Janeiro"}
+]
 
 let {nome, idade, cidade} = pessoa
 
