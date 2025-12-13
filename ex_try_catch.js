@@ -5,7 +5,7 @@ function buscarUsuario(id) {
                 resolve("Usuário encontrado")
             }
             else {
-                reject("Usuário não encontrado")
+                reject(new Error("Usuário não encontrado"))
             }
         }, 1000);
     })
@@ -16,7 +16,7 @@ async function executar() {
         let resultado = await buscarUsuario(2)
         console.log(resultado)
     } catch (erro) {
-        console.log("Erro", erro)
+        console.log("Erro", erro.message)
     }
 }
 
